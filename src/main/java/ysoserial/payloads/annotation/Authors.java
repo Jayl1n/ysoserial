@@ -18,6 +18,8 @@ public @interface Authors {
     String GEBL = "gebl" ;
     String JACOBAINES = "jacob-baines";
     String JASINNER = "jasinner";
+    String KULLRICH = "kai_ullrich";
+    String TINT0 = "_tint0";
     String JAYL1n = "Jayl1n";
 
     String[] value() default {};
