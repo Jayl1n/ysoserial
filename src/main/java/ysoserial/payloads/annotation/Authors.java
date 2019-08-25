@@ -20,14 +20,14 @@ public @interface Authors {
     String JASINNER = "jasinner";
     String KULLRICH = "kai_ullrich";
     String TINT0 = "_tint0";
-    String JAYL1n = "Jayl1n";
+    String JAYL1N = "Jayl1n";
 
     String[] value() default {};
 
-    public static class Utils {
+    class Utils {
         public static String[] getAuthors(AnnotatedElement annotated) {
             Authors authors = annotated.getAnnotation(Authors.class);
-            if (authors != null && authors.value() != null) {
+            if (authors != null) {
                 return authors.value();
             } else {
                 return new String[0];

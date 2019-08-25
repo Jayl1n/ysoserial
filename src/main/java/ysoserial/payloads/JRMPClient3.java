@@ -8,11 +8,8 @@ import ysoserial.payloads.annotation.PayloadTest;
 import ysoserial.payloads.util.PayloadRunner;
 
 import javax.management.remote.rmi.RMIConnectionImpl_Stub;
-import java.lang.reflect.Proxy;
-import java.rmi.activation.Activator;
 import java.rmi.server.ObjID;
 import java.rmi.server.RemoteObject;
-import java.rmi.server.RemoteObjectInvocationHandler;
 import java.util.Random;
 
 /**
@@ -22,7 +19,7 @@ import java.util.Random;
     "restriction"
 })
 @PayloadTest(harness = "ysoserial.payloads.JRMPReverseConnectSMTest")
-@Authors({Authors.JAYL1n})
+@Authors({Authors.JAYL1N})
 public class JRMPClient3 extends PayloadRunner implements ObjectPayload<RemoteObject> {
 
     public RemoteObject getObject(final String command) throws Exception {
